@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>iTunesArtwork@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F5F5F5" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="iTunesArtwork@2x" sketch:type="MSArtboardGroup">
+            <path d="M357.009067,0 L666.990933,0 C769.792,0 821.179733,0 876.5184,17.4933333 C936.9344,39.4837333 984.516267,87.0656 1006.50667,147.4816 C1024,202.811733 1024,254.216533 1024,357.009067 L1024,666.990933 C1024,769.792 1024,821.179733 1006.50667,876.5184 C984.516267,936.9344 936.9344,984.516267 876.5184,1006.49813 C821.179733,1024 769.792,1024 666.990933,1024 L357.009067,1024 C254.208,1024 202.811733,1024 147.4816,1006.49813 C87.0656,984.516267 39.4837333,936.9344 17.4933333,876.5184 C0,821.179733 0,769.792 0,666.990933 L0,357.009067 C0,254.216533 0,202.811733 17.4933333,147.4816 C39.4837333,87.0656 87.0656,39.4837333 147.4816,17.4933333 C202.811733,0 254.208,0 357.009067,0 L357.009067,0" id="Icon-Shape" fill="url(#linearGradient-1)" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+            <g id="Towah" sketch:type="MSLayerGroup" transform="translate(353.000000, 144.000000)">
+                <rect id="Base" fill="#59A8D9" sketch:type="MSShapeGroup" x="14.4545455" y="606.245902" width="289.090909" height="1154.7541"></rect>
+                <polygon id="Triangle-1" fill="#4C8EBE" sketch:type="MSShapeGroup" points="28.9090909 204.081967 43.3636364 304.122951 14.4545455 304.122951 "></polygon>
+                <rect id="Base-7" fill="#4C8EBE" sketch:type="MSShapeGroup" x="34.6909091" y="285.801639" width="260.181818" height="28.8688525"></rect>
+                <polygon id="Triangle-3" fill="#4C8EBE" sketch:type="MSShapeGroup" points="159 0 289.090909 288.688525 28.9090909 288.688525 "></polygon>
+                <polygon id="Triangle-2" fill="#4C8EBE" sketch:type="MSShapeGroup" points="289.090909 203.081967 303.545455 304.122951 274.636364 304.122951 "></polygon>
+                <rect id="Base-5" fill="#59A8D9" sketch:type="MSShapeGroup" x="14.4545455" y="331.991803" width="289.090909" height="216.516393"></rect>
+                <rect id="Base-2" fill="#4A89B9" sketch:type="MSShapeGroup" x="0" y="577.377049" width="318" height="28.8688525"></rect>
+                <rect id="Base-6" fill="#4A89B9" sketch:type="MSShapeGroup" x="0" y="303.122951" width="318" height="28.8688525"></rect>
+                <rect id="Base-3" fill="#59A8D9" sketch:type="MSShapeGroup" x="14.4545455" y="548.508197" width="289.090909" height="28.8688525"></rect>
+                <rect id="Base-4" fill="#4A89B9" sketch:type="MSShapeGroup" x="14.4545455" y="548.508197" width="289.090909" height="14.4344262"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.8" fill="#4A88B8" sketch:type="MSShapeGroup" x="43.3636364" y="635.114754" width="231.272727" height="1125.88525"></rect>
+                <path d="M43.3636364,642.151537 L43.3636364,1761 L57.8181818,1761 L57.8181818,649.18832 L274.636364,649.18832 L274.636364,635.114754 L43.3636364,635.114754 L43.3636364,642.151537 Z" id="Rectangle-6" fill-opacity="0.7" fill="#4A88B8" sketch:type="MSShapeGroup"></path>
+                <ellipse id="Oval-10" fill-opacity="0.2" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="159" cy="750.590164" rx="101.181818" ry="101.040984"></ellipse>
+                <g id="Window-thing" transform="translate(43.363636, 357.973770)" fill-opacity="0.8" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <path d="M63.6,31.7557377 C63.6,14.2175281 49.362655,0 31.8,0 C14.237345,0 3.16132564e-15,14.2175281 5.26466476e-31,31.7557377 L0,190.534426 L63.6,190.534426 L63.6,31.7557377 Z" id="shape"></path>
+                </g>
+                <g id="Window-thing-2" transform="translate(127.200000, 357.973770)" fill-opacity="0.8" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <path d="M63.6,31.7557377 C63.6,14.2175281 49.362655,0 31.8,0 C14.237345,0 3.16132564e-15,14.2175281 5.26466476e-31,31.7557377 L0,190.534426 L63.6,190.534426 L63.6,31.7557377 Z" id="shape"></path>
+                </g>
+                <g id="Window-thing-3" transform="translate(211.036364, 357.973770)" fill-opacity="0.8" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <path d="M63.6,31.7557377 C63.6,14.2175281 49.362655,0 31.8,0 C14.237345,0 3.16132564e-15,14.2175281 5.26466476e-31,31.7557377 L0,190.534426 L63.6,190.534426 L63.6,31.7557377 Z" id="shape"></path>
+                </g>
+                <rect id="Rectangle-27" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(176.345455, 765.024590) rotate(-229.000000) translate(-176.345455, -765.024590) " x="170.563636" y="707.286885" width="11.5636364" height="115.47541"></rect>
+                <rect id="Rectangle-28" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(164.781818, 760.694262) rotate(-203.000000) translate(-164.781818, -760.694262) " x="159" y="718.834426" width="11.5636364" height="83.7196721"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
