@@ -4,26 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>BerkeleyBord</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300, 700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../static/stylesheets/main.css" type="text/css">
+    <link rel="stylesheet" href="../static/stylesheets/main.css" type="text/css">
+    <link rel="icon" type="image/png" href="../static/img/favicon.png" />
+    <script type="text/javascript" src="../static/javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../static/javascripts/bootstrap/modal.js"></script>
 </head>
 
 <body>
     <nav class="navbar" role="navigation">
         <div class="title col-xs-12">
-            <h1>BBord</h1>
-            <span class="glyphicon glyphicon-edit"></span>
+        	<div class="title-container">
+	            <h2><a href="">BBord</a></h2>
+	            <a id="new-post" class="glyphicon glyphicon-edit" data-target="modal"></a>
+        	</div>
         </div>
         <div class="sort">
-            <h2 class="col-xs-6">New</h2>
-            <h2 class="col-xs-6">Hot</h2>
+            <h3 id="sort-hot" class="col-xs-6 active">Hot</h3>
+            <h3 id="sort-new" class="col-xs-6 inactive">New</h3>
         </div>
     </nav>
+    <form action="">
+        <textarea name="message" type="text" class="col-xs-12 new-message" rows="5"></textarea>
+        <button type="button" class="btn btn-primary submit-message">Submit</button>
+    </form>
     <section class="posts">
-        <div class="post">
-            <div class="message">This is a post that says like text and shit you know text does that stuff</div>
-            <div class="timestamp">5 minutes ago</div>
-            <div class="score">20</div>
+        <div class="post clearfix">
+			<div class="message col-xs-10">
+	            <p class="text">This is a post that says like text and shit you know text does that stuff</p>
+	            <p class="timestamp">5 minutes ago</p>
+	        </div>
+	        <div class="vote col-xs-2">
+	            <div class="upvote glyphicon glyphicon-chevron-up"></div>
+	            <div class="score">20</div>
+	        </div>
             <hr class="divider">
         </div>
     </section>

@@ -7379,39 +7379,127 @@ button.close {
     display: none !important;
   }
 }
-/* line 34, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 html, body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   font-size: 100%;
-}
-
-/* line 39, ../sass/main.scss */
-h1 {
-  font-size: 3.815em;
-}
-
-/* line 42, ../sass/main.scss */
-h2 {
-  font-size: 2.441em;
-}
-
-/* line 45, ../sass/main.scss */
-h3 {
-  font-size: 1.563em;
+  font-weight: 300;
 }
 
 /* line 48, ../sass/main.scss */
-h4 {
-  font-size: 1em;
+h1 {
+  font-size: 3.815rem;
 }
 
 /* line 51, ../sass/main.scss */
-h5 {
-  font-size: 0.8em;
+h2 {
+  font-size: 2.441rem;
 }
 
 /* line 54, ../sass/main.scss */
+h3 {
+  font-size: 1.563rem;
+}
+
+/* line 57, ../sass/main.scss */
+h4 {
+  font-size: 1rem;
+}
+
+/* line 60, ../sass/main.scss */
+h5 {
+  font-size: 0.8rem;
+}
+
+/* line 63, ../sass/main.scss */
 h6 {
-  font-size: 0.64em;
+  font-size: 0.64rem;
+}
+
+/* line 66, ../sass/main.scss */
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+/* line 69, ../sass/main.scss */
+a:hover {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* line 74, ../sass/main.scss */
+nav.navbar {
+  color: #FFFFFF;
+  border: 0;
+}
+/* line 77, ../sass/main.scss */
+nav.navbar .title {
+  font-size: 0;
+  background-color: #193564;
+}
+/* line 80, ../sass/main.scss */
+nav.navbar .title h2 {
+  display: inline-block;
+  font-size: 2.441rem;
+  vertical-align: middle;
+  width: 90%;
+}
+/* line 86, ../sass/main.scss */
+nav.navbar .title .glyphicon-edit {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 3rem;
+  width: 10%;
+  cursor: pointer;
+}
+/* line 95, ../sass/main.scss */
+nav.navbar .sort .col-xs-6 {
+  background-color: #475d83;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 100, ../sass/main.scss */
+nav.navbar .sort .col-xs-6:hover {
+  background-color: #4a7cd2;
+}
+/* line 103, ../sass/main.scss */
+nav.navbar .sort .col-xs-6.active {
+  background-color: #4a7cd2;
+}
+
+/* line 108, ../sass/main.scss */
+.post {
+  font-size: 0;
+}
+/* line 110, ../sass/main.scss */
+.post .message, .post .vote {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  font-size: 1rem;
+}
+/* line 116, ../sass/main.scss */
+.post .vote, .post .score {
+  text-align: center;
+}
+/* line 119, ../sass/main.scss */
+.post .upvote {
+  font-size: 1.5em;
+  display: block;
+  cursor: pointer;
+}
+/* line 124, ../sass/main.scss */
+.post .timestamp {
+  color: #AAAAAA;
+}
+/* line 127, ../sass/main.scss */
+.post .score {
+  font-size: 2.441rem;
 }
