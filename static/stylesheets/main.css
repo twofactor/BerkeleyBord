@@ -7430,22 +7430,25 @@ a:hover {
 
 /* line 74, ../sass/main.scss */
 nav.navbar {
+  position: fixed;
+  z-index: 1;
   color: #FFFFFF;
   border: 0;
+  width: 100%;
 }
-/* line 77, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 nav.navbar .title {
   font-size: 0;
   background-color: #193564;
 }
-/* line 80, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 nav.navbar .title h2 {
   display: inline-block;
   font-size: 2.441rem;
   vertical-align: middle;
   width: 90%;
 }
-/* line 86, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 nav.navbar .title .glyphicon-edit {
   display: inline-block;
   text-align: right;
@@ -7454,7 +7457,7 @@ nav.navbar .title .glyphicon-edit {
   width: 10%;
   cursor: pointer;
 }
-/* line 95, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 nav.navbar .sort .col-xs-6 {
   background-color: #475d83;
   -webkit-transition: all 400ms ease;
@@ -7465,41 +7468,60 @@ nav.navbar .sort .col-xs-6 {
   text-align: center;
   cursor: pointer;
 }
-/* line 100, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 nav.navbar .sort .col-xs-6:hover {
   background-color: #4a7cd2;
 }
-/* line 103, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 nav.navbar .sort .col-xs-6.active {
   background-color: #4a7cd2;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
+.new-message-container {
+  padding-top: 109px;
+}
+/* line 113, ../sass/main.scss */
+.new-message-container textarea {
+  width: 100%;
+  font-size: 72px;
+}
+/* line 117, ../sass/main.scss */
+.new-message-container .btn-primary {
+  background-color: #4a7cd2;
+}
+/* line 119, ../sass/main.scss */
+.new-message-container .btn-primary:hover {
+  background-color: #475d83;
+}
+
+/* line 124, ../sass/main.scss */
 .post {
   font-size: 0;
 }
-/* line 110, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .post .message, .post .vote {
   display: inline-block;
   vertical-align: middle;
   float: none;
   font-size: 1rem;
 }
-/* line 116, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .post .vote, .post .score {
   text-align: center;
 }
-/* line 119, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .post .upvote {
   font-size: 1.5em;
   display: block;
   cursor: pointer;
 }
-/* line 124, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .post .timestamp {
   color: #AAAAAA;
 }
-/* line 127, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .post .score {
   font-size: 2.441rem;
+  font-weight: 700;
 }

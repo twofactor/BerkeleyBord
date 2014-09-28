@@ -72,8 +72,11 @@ a	{
 	}
 }
 nav.navbar	{
+	position: fixed;
+	z-index: 1;
 	color: $white;
 	border: 0;
+	width: 100%;
 	.title	{
 		font-size: 0;
 		background-color: $dark-blue;
@@ -105,6 +108,19 @@ nav.navbar	{
 		}
 	}
 }
+.new-message-container	{
+	padding-top: 109px;
+	textarea {
+		width: 100%;
+		font-size: 72px;
+	}
+	.btn-primary	{
+		background-color: $light-blue;
+		&:hover	{
+			background-color: $med-blue;
+		}
+	}
+}
 .post	{
 	font-size: 0;
 	.message, .vote	{
@@ -126,5 +142,6 @@ nav.navbar	{
 	}
 	.score	{
 		font-size: $text-size-2;
+		font-weight: 700;
 	}
 }
