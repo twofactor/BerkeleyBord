@@ -4,48 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BerkeleyBord</title>
+    <title>Berkeley Bord</title>
     <link href="http://fonts.googleapis.com/css?family=Lato:300, 700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../static/stylesheets/main.css" type="text/css">
     <link rel="stylesheet" href="../static/stylesheets/main.css" type="text/css">
     <link rel="icon" type="image/png" href="../static/img/favicon.png" />
     <script type="text/javascript" src="../static/javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../static/javascripts/jquery.timeago.js"></script>
     <script type="text/javascript" src="../static/javascripts/bootstrap/modal.js"></script>
+    <script type="text/javascript" src="../static/javascripts/jquery.easytabs.min.js"></script>
+    <link rel="apple-touch-icon" href="../static/img/apple_icon.png">
+    <link rel="apple-touch-startup-image" href="../static/img/apple_splash.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style type="text/css">
+    .textarea{
+        font-size: 14px;
+    }
+
+    </style>
+    <script>
+    $( document ).on(
+    "click",
+    "a",
+    function( event ){
+ 
+        // Stop the default behavior of the browser, which
+        // is to change the URL of the page.
+        event.preventDefault();
+ 
+        // Manually change the location of the page to stay in
+        // "Standalone" mode and change the URL at the same time.
+        location.href = $( event.target ).attr( "href" );
+ 
+    }
+);
+    </script>
+
 </head>
 
-<body>
+<body id="tabcontainer">
     <nav class="navbar" role="navigation">
         <div class="title col-xs-12">
             <div class="title-container">
                 <h2><a href="">BBord</a>
                 </h2>
-                <a id="new-post" class="glyphicon glyphicon-edit" data-target="modal"></a>
+                
             </div>
         </div>
         <div class="sort">
-            <h3 id="sort-hot" class="col-xs-6 active">Hot</h3>
-            <h3 id="sort-new" class="col-xs-6 inactive">New</h3>
+            <h3 id="sort-hot" class="col-xs-6 active"><a href="#new">New</a></h3>
+            <h3 id="sort-new" class="col-xs-6 inactive"><a href="#hot">Hot</a></h3>
         </div>
     </nav>
-    <form action="">
+    <form action='/api/bbord' method="POST">
         <div class="new-message-container col-xs-12">
-            <textarea name="message" type="text" class="new-message" rows="5"></textarea>
-            <button type="button" class="btn btn-primary submit-message">Submit</button>
+            <textarea name="message" type="text" class="new-message" rows="2"></textarea>
+            <input type="submit"  class="btn btn-primary submit-message"></input>
         </div>
     </form>
-    <section class="posts">
+
+
+    <div id="new">
+    <section  class="posts">
+        {% for post in posts %}
         <div class="post clearfix">
             <div class="message col-xs-9 col-md-10">
-                <p class="text">This is a post that says like text and shit you know text does that stuff</p>
-                <p class="timestamp">5 minutes ago</p>
+                <p class="text">{{post.message}}</p>
+                <abbr class="timeago timestamp" title="{{post.pub_date}}">EECS IS MASTER RACE</abbr>
             </div>
             <div class="vote col-xs-3 col-md-2">
-                <div class="upvote glyphicon glyphicon-chevron-up"></div>
-                <div class="score">20</div>
+                <a href="/upvote/{{post.id}}" class="upvote glyphicon glyphicon-chevron-up"></a>
+                <div class="score">{{post.score}}</div>
             </div>
             <hr class="divider">
         </div>
+        {% endfor %}
+    </section></div>
+
+    <div id="hot">
+    <section  class="posts">
+        {% for swag in swags %}
+        <div class="post clearfix">
+            <div class="message col-xs-9 col-md-10">
+                <p class="text">{{swag.message}}</p>
+                <abbr class="timeago timestamp" title="{{swag.pub_date}}">EECS IS MASTER RACE</abbr>
+            </div>
+            <div class="vote col-xs-3 col-md-2">
+                <a href="/upvote/{{post.id}}" class="upvote glyphicon glyphicon-chevron-up"></a>
+                <div class="score">{{swag.score}}</div>
+            </div>
+            <hr class="divider">
+        </div>
+        {% endfor %}
     </section>
+    </div>
+
+    <script>
+    jQuery(document).ready(function() {
+  jQuery("abbr.timeago").timeago();
+});
+    $('#tab-container').easytabs();
+    </script>
 </body>
 
 </html>

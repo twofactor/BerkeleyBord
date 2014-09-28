@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BerkeleyBord</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300, 700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../static/stylesheets/main.css" type="text/css">
+    <link rel="stylesheet" href="../static/stylesheets/main.css" type="text/css">
+    <link rel="icon" type="image/png" href="../static/img/favicon.png" />
+    <script type="text/javascript" src="../static/javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../static/javascripts/bootstrap/modal.js"></script>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="title col-xs-12">
+        	<div class="title-container">
+	            <h2><a href="">BBord</a></h2>
+	            <!--<a id="new-post" class="glyphicon glyphicon-edit" data-target="modal"></a>-->
+        	</div>
+        </div>
+        <div class="sort">
+            <a href="index.html"><h3 id="sort-hot" class="col-xs-6 active">New</h3></a>
+            <h3 id="sort-new" class="col-xs-6 inactive">Hot</h3>
+        </div>
+    </nav>
+    <form action="">
+        <textarea name="message" type="text" class="col-xs-12 new-message" rows="5"></textarea>
+        <button type="button" class="btn btn-primary submit-message">Submit</button>
+    </form>
+    <section class="posts">
+        {% for post in posts %}
+        <div class="post clearfix">
+			<div class="message col-xs-10">
+	            <p class="text">{{post.message}}</p>
+	            <p class="timestamp">{{post.pub_date}}</p>
+	        </div>
+	        <div class="vote col-xs-2">
+	            <a href="/upvote/{{post.id}}" class="upvote glyphicon glyphicon-chevron-up"></a>
+	            <div class="score">{{post.score}}</div>
+	        </div>
+            <hr class="divider">
+        </div>
+        {% endfor %}
+    </section>
+</body>
+
+</html>
