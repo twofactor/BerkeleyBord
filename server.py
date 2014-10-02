@@ -22,7 +22,6 @@ class Post(db.Model):
 
 	def __repr__(self):
 		return '<message %r>' % self.message
-
 posts = Post.query.order_by(desc(Post.id)).all()
 swags = swags = Post.query.order_by(desc(Post.score)).all()
 
